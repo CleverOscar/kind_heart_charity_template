@@ -1,10 +1,9 @@
 
-
 function App() {
   return (
     <div >
       <header>
-        <p>Kind Heart Charity</p>
+        <p className="">Kind Heart Charity</p>
       </header>
     </div>
   );
