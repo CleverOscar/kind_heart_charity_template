@@ -1,9 +1,11 @@
+import Header from "./Views/Header/Header";
+
 
 function App() {
   return (
     <div >
       <header>
-        <p className="">Kind Heart Charity</p>
+        <Header />
       </header>
     </div>
   );
