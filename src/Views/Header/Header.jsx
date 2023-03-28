@@ -32,7 +32,7 @@ export default function Header(){
 
 
             <div className='hidden md:block'>
-                Social Icons
+                Social Icons Go Here
             </div>
         </div>
     )
