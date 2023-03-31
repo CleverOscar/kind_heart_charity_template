@@ -13,7 +13,7 @@ export default function Navbar(){
     return(
         <div className='border border-2 w-full bg-slate-50'>
 
-            <div className='flex container mx-auto w-10/12'>
+            <div className='flex flex-row mx-auto container'>
                 <img style={imageStyle} src="https://i.ibb.co/rt7x6Jk/logo.png" alt="logo" border="0" />
                 
                 <div className='self-center'>
@@ -26,7 +26,7 @@ export default function Navbar(){
                 </div>
 
 
-                <div className='ml-auto my-auto'>
+                <div className='self-center ml-auto'>
                     <MobileButon />
                 </div>
             
