@@ -1,5 +1,7 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
-import React from 'react';
+import React, {useState} from 'react';
+import "./Navbar.css"
+
 
 export default function Navbar(){
 
@@ -24,7 +26,9 @@ export default function Navbar(){
                 </div>
 
 
-                <MobileButon />
+                <div className='ml-auto my-auto'>
+                    <MobileButon />
+                </div>
             
             </div>
 
@@ -33,11 +37,21 @@ export default function Navbar(){
 }
 
 function MobileButon(){
+
+    const [isActive, setActive] = useState(false);
+
+    const toggleClass = () => {
+        setActive(!isActive)
+    }
+
     return(
     
-        <button className='border-2 border-black ml-auto'> 
-                    mbNav
-    </button>
+        <div className='mobileButton' onClick={toggleClass}>
+            <div className={isActive ? 'change1 bar1' : "bar1"}></div>
+            <div className={isActive ? 'change2 bar2': "bar2"}></div>
+            <div className={isActive ? 'change3 bar3' : "bar3"}></div>
+        </div>
     
     )
+
 }
