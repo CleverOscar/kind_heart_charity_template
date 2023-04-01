@@ -5,7 +5,7 @@ export default function CompanyHeaderInfo(){
     return(
         <div className='bg-[#5bc1ac] '>
 
-           <div className='container mx-auto text-base py-3 flex text-white'>
+           <div className='container mx-auto text-base py-3 px-4 md:px-0 flex text-white'>
                 <div className="flex flex-wrap container items-center mx-auto sm:justify-around md:justify-start">
 
                 <div className='flex '>
